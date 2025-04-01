@@ -32,6 +32,7 @@ The main challenges associated with the AutoChrome process are the creation of t
     * The mask will have orientation markings on it so that the orientation of the mask with respect to the film at the time of shooting is known 
 3. Reverse process the film separately from the mask
     * Details of the exact process will be shared when results are satisfying, but a standard reversal process should suffice
+    * [Current planned process](https://imager.ie/a-better-peroxide-black-and-white-reversal-bleach/)
 4. Adhere the color mask to the developed film using the orientation marks
 
 The resulting piece should resemble an AutoChrome
