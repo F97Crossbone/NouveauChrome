@@ -8,11 +8,11 @@ from PIL import Image
 def main():
     """ Main program """
     #Generate array
-    img_w = 474 #width
-    img_h = 397 #height
+    img_w = 1422 #width
+    img_h = 1190 #height
     LineArray = np.zeros((img_h, img_w, 3), dtype=np.uint8) #create empty array for color matrix
     j = 0 # initialize index
-    for i in range(397):
+    for i in range(img_h):
         if j == 3: #restart index
             j = 0
         match j: # alternate color for rows
@@ -25,6 +25,11 @@ def main():
         LineArray[i] = color #set row to color
         j += 1 #step index
     #print(LineArray) #display resulting array
+    #Add orientation markers
+    mark_w = 25
+    mark_h = 100
+    mark = np.zeros((mark_h, mark_w, 3), dtype=np.uint8)
+    LineArray[0:mark_h, 0:mark_w] = mark
     #Generate image
     im = Image.fromarray(LineArray, 'RGB')#.show() #turn to RGB image
     im.save('testLines.png')
