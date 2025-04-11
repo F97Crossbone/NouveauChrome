@@ -1,0 +1,3 @@
+Actual measurement of 4x5 film is 3.91x4.9 in (at least Foma 200)
+Actual exposure area is 3.968x4.74
+Exposed picture is approx 1190x1422 at 300DPI
