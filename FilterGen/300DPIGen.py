@@ -9,9 +9,11 @@ from PIL import Image
 #Exposed picture is approx 1190x1422 at 300DPI
 def main():
     """ Main program """
+    img_w = 474 #width
+    img_h = 397 #height
     #Generate array
     colorArray = np.array([(255,0,0), (0,255,0), (0,0,255)])
-    DotArray = np.tile(colorArray, (474,397))#564060
+    DotArray = np.tile(colorArray, (img_h,img_w))#564060
     #print(DotArray)
     #Generate image
     #im = Image.new('RGB', (1190, 1422))
