@@ -2,7 +2,7 @@
 Repo for the NouveauChrome project, which seeks to modernize the AutoChrome process
 
 # What is AutoChrome?
-AutoChrome is an early color photography process that utilized colored starch particles to create a color film mask. When the black and white film was reverse processed and was backlit a color image would appear
+AutoChrome is an early color photography process that utilized colored starch particles to create a color film mask. When the black and white film was reverse processed and was backlit a color image would appear. Autochrome is what is known as a screen process, in which a colored screen of some form is placed in front of a panchromatic B&W emulsion. A general overview of these processes can be found [Here](https://filmcolors.org/cat/screen-processes/), but there are several process that are of interest in addition to AutoChrome. Most commercial screen processes did not use the randomized pattern produced by dyed starch, but rather alternating squares, circles, or lines of a color. These processes, such as the Paget or McDonough, more closely resemble what the final NouveauChrome photo will look like.
 
 # Why update the process?
 AutoChrome is an incredibly complicated process to perform at home. While specific details can be found at [John Hilty's](https://www.jonhilty.com/screenplateguide) exhaustive guide, the gist of the process was:
@@ -43,3 +43,8 @@ The resulting piece should resemble an AutoChrome
 3. Color mask orientation
 4. Color mask generation
     * Ultimately this mask will be digitally generated, and may result in a "pixelated" look
+5. Color mask balance
+    * The color balance of the final image may not be accurate in the initial round of testing, as the standard RGB color separation is used. Panchromatic film does not have an even sensitivity towards all light wavelengths, so adjustments in the values of each color may need to be done
+
+# Current Status
+* Initial code for generating color masks (both individual pixels and alternating lines) is completed, and available in the FilterGen directory. Commercial printers have been contacted regarding the feasibility of printing the current designs
